@@ -1,0 +1,232 @@
+* {
+    padding: 0px; /* define uma a distância entre o conteúdo de um elemento e suas bordas*/
+    margin: 0px; /* define uma a distância entre o conteúdo de um elemento e suas bordas */
+
+}
+body {
+    width: 1024px; /*LARGURA*/
+    margin: 0px auto; /*LATERAIS*/
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /*espessura da font*/
+
+    background-color: #fafafa;
+
+    background-image: url("/casaverde/assets/Vector.svg");
+    background-repeat: no-repeat;
+    background-position: top -84px right;
+    background-size: 50%;
+}
+
+header {
+    position: relative;
+    display: flex; /*Ele joga os itens para o outro lado do site*/
+    justify-content: space-between; /*Ele cria um espaçamento entre a Logo  e os menu colocados*/
+    align-items: baseline; /* pegar todos os os itens e alinhar na parte inferior*/
+}
+
+header nav ul {
+    list-style-type: none; /*A bolinhas e as marcações somem*/
+}
+
+header nav li {
+    display: inline; /* organiza as palavras em linha*/
+}
+
+nav li:after /*depois de cada LI que está em NAV*/ {
+    content: "/"; /* para colocar uma caractere que deseje entre as palavras*/
+    margin: 0 0.8rem;/* aqui ela coloca um espaçamento entre os menus */
+}
+
+nav li:last-child::after {
+    content: "";
+}
+
+
+/*ARTIGOS*/
+.artigoprincipal{
+    width: 100%;
+    padding-top: 144px;
+    background: url("/casaverde/img/imagem-hero1.png") no-repeat top -110px right -60px;
+    
+
+}
+.artigoprincipal h2 {
+    /*font-weight: 400, Regular;*/
+    font-size: 22px; /*tamanho da font*/
+    /*opacity: 0.5;*/
+}
+.artigoprincipal h3{
+    font-family: 'Elsie Swash Caps', sans-serif;
+    /*font-weight: 900, Black;*/
+    font-size: 82px;
+    width: 481px;
+    margin-bottom: 24px;
+}
+
+.artigoprincipal p {
+    width: 481px;
+    opacity: 0.5; /*diminui a opacidade*/
+}
+
+form{
+    width: 500px;
+    height: 75px;
+    display: flex;
+    margin: 35px 0px;
+
+    background-color: #fff;
+    box-shadow: 10px 10px 30px 0px #0000000f;
+}
+/*toda vez que for falar de alguma parte do codigo, coloque primeiro aonde ela tá exembro body mean div*/
+
+form img /* dentro do formulário existe uma foto*/{
+    margin-left: 16px;
+    width: 24px;
+
+}
+
+form input{
+    padding: 16px; /*espaçamento*/
+    border-style: none;
+    width: 55%;
+}
+
+form input::-webkit-input-placeholder /* codigo para mexer apenas no que tem inscrito no input*/{
+    opacity: 0.3;
+}
+
+form button{
+    border-style:none;
+    width: 45%;
+    height:100%;
+    background-color: #FFCB47;
+    color: #fff;
+
+}
+
+.artigoprincipal section {
+    margin-left: 8rem;
+    margin-top: 12.5rem;
+    text-align: center;
+    width: 900px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* pega todo o coluno dividindo em coluna, exemplo uma fica com foto e a outra texto.*/
+    background-color: #fff;
+
+    box-shadow: 10px 10px 30px 0px #0000000f;
+}
+
+.artigoprincipal section img {
+    position: relative;
+    height: 360px;
+    left: 0px;
+}
+
+.detalhe li img{
+    width: 48px;
+    height: 48px;
+    vertical-align: middle;
+}
+
+.detalhe li {
+    margin: 27px 0px;
+
+}
+
+.detalhe {
+    position: relative;
+    text-align: left;
+    padding: 38px 0px 0px 21px; /* cima, direito, baixo, esquerdo*/
+}
+
+.detalhe ul{
+    list-style-type: none;
+}
+
+.detalhe h4{
+    font: 42px 'Elsie Swash Caps', sans-serif;
+
+}
+
+article.ofertas {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-top: 45px;
+}
+
+article.ofertas p{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+article.ofertas h3{
+    width: 100%;
+    font-family:'Elsie Swash Caps', sans-serif;
+    font-size: 82px;
+
+}
+
+article.ofertas div.catalogo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+
+}
+
+div.produto {
+    display: flex;
+    box-shadow: 10px 10px 30px 0px #00000020;
+    position: relative;
+    align-items: button;
+}
+
+div.inforproduto h4 {
+        font-family: 'Elsie Swash Caps', sans-serif;
+        font-size: 32px;
+        font-weight: 900;
+        text-align: left;
+        width: 100%;
+    }
+
+    div.inforproduto p{
+        text-align: left;
+        margin-top: 8px;
+        margin-bottom: 24px;
+    }
+
+    div.produto img {
+        object-fit: cover;
+        width: 200px;
+        height: 200px;
+        align-items: baseline;
+    }
+
+    div.inforproduto a img{
+        width: 16px;
+        height: 16px;
+        left: -20px;
+        position: relative;
+        object-fit: fill;
+    }
+
+    div.produto a {
+        display: flex;
+        justify-content:space-between;
+        text-decoration: none;
+    }
+
+    div.inforproduto button{
+        color:rgba(255, 203, 71, 1);
+        font-size: 16px;
+        font-weight: 400;
+        font-family: 'Montserrat', sans-serif;
+        background-color: rgba(0, 0, 0, 0);
+        border-style: none;
+    }
+
+    div.inforproduto button:hover{
+        cursor: pointer;
+    }
